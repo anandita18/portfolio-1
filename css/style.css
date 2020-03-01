@@ -6,10 +6,6 @@ body{
     font-family: 'Montserrat';
 }
 
-.skip a{
-
-}
-
 /* .skip a{
     background: #FFFFFF;
     left: 0;
@@ -109,6 +105,7 @@ header img{
     justify-items: center;
 }
 
+/* Used https://www.w3schools.com/css/css_form.asp for form CSS*/
 input[type=text], select, textarea {
     width: 70%;
     padding: 12px;
@@ -264,6 +261,7 @@ input[type=submit] {
     font-size: 15px;
 }
 
+/* Used https://www.w3schools.com/howto/howto_css_circles.asp to create circles on timeline */
 #page4 .event::after{
     content: '';
     background: #fff;
@@ -274,7 +272,6 @@ input[type=submit] {
     position: absolute;
     top: 20%;
     left: -38px;
-  }
 }
 
 footer {
@@ -287,11 +284,6 @@ footer {
     text-align: center;
 }
 
-
-/* input[type=submit]:hover {
-    background-color: #2ea699;
-}
- */
 @media screen and (min-width: 850px){
 
 }
