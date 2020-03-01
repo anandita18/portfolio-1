@@ -1,0 +1,197 @@
+html{
+    scroll-behavior: smooth;
+  }
+
+body{
+    font-family: 'Montserrat';
+}
+
+/* .skip a{
+    background: #FFFFFF;
+    left: 0;
+    padding: 6px;
+    -webkit-transition: top 1s ease-out;
+    transition: top 1s ease-out;
+    z-index: 1;
+    position: absolute;
+    top: -40px;
+    overflow: hidden;
+} */
+  
+/* https://accessibility.psu.edu/skipnav/skiplinks/ */
+  
+.skip a:focus, .skip a:active{
+    position: relative;
+    overflow: visible;
+    top:0;
+    left:0;
+    border: 2px solid #000000;
+} 
+
+header{
+    padding-right: 15px;
+    background: #fff;
+}
+
+header img{
+    padding-left: 20px;
+    width: 60px;
+    float: left;
+}
+
+.nav-bar{
+    text-align: right;
+    word-spacing: 15px;
+    padding-top: 35px;
+    padding-right: 20px;
+}
+
+.nav-bar a{
+    text-decoration: none;
+    color: #000000;
+}
+
+.nav-bar a:hover, a:focus{
+    color: #2ea699;
+    text-decoration: underline;
+}
+
+#page1 .intro{
+    padding-top: 35px;
+    text-align: center;
+    font-size: 20px;
+    color: #2ea699;
+}
+#page1 .h2{
+    font-size: 13px;
+    text-align: center;
+}
+#page1 #thin-text{
+    color: #000000;
+    font-weight: lighter;
+}
+
+#page1 .gallery{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.gallery > img{
+    margin: 15px;
+    width: 300px;
+    height: 300px;
+    justify-content: center;
+    align-items: center;
+}
+
+#page2 .heading{
+    margin-left: 20px;
+}
+#page2 .contact{
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%;
+    padding: 10px;
+}
+
+#page2 .column {
+    float: left;
+    width: 50%;
+    margin-bottom: 100px;
+    margin-top: -20px;
+    padding: 20px;
+    justify-items: center;
+}
+
+input[type=text], select, textarea {
+    width: 70%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    margin-top: 6px;
+    margin-bottom: 16px;
+}
+
+input[type=submit] {
+    background-color: #2ea699;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.contact {
+    padding-bottom: 50px;
+}
+
+.column{
+    padding-left: 300px;
+}
+
+.heading{
+    text-align: center;
+}
+
+#page3 .about{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+
+#page3 #thin{
+    font-weight: lighter;
+    font-size: 30px;
+}
+
+#page3 .welcome{
+    padding-top: 50px;
+    padding-left: 70px;
+}
+
+.imagebox{
+    grid-column: 2/span 1;
+    padding-left: 200px;
+    padding-bottom: 100px;
+}
+
+.content{
+    height: 50px;
+    padding-left: 70px;
+    padding-top: 40px;
+    grid-column: 1/span 1;
+    line-height: 2;
+}
+
+#page3 .gallery{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-row-gap:15px;
+    align-items: center; 
+}
+
+#page3 .gallery > img{
+    margin: 0 auto;
+    width: 400px;
+    height: 250px;
+}
+
+footer {
+    position: absolute;
+    margin-top: auto;
+    left: 0;
+    width: 100%;
+    background-color: #2ea699;
+    color: white;
+    text-align: center;
+  }
+}
+/* input[type=submit]:hover {
+    background-color: #2ea699;
+}
+ */
+@media screen and (min-width: 850px){
+
+}
