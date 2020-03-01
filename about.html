@@ -8,64 +8,66 @@
     <title>Kaavya's Portfolio</title>
 </head>    
 <body id="page3">
-    <a class="skip" href="#skip">Skip to Main</a>
-    <header>
-        <img src = "images/logo.png" alt="logo" id="logo">
-            <nav class="nav-bar">
-                <a href="index.html">Home</a>
-                <a href="resume.html">Resume</a>
-                <a href="about.html">About</a>
-                <a href="more.html">More</a>
-            </nav>
-    </header>
-    <div class="welcome">
-        <span id="thin">Hey there!</span>
-    </div>
-    <div class="about">
-        <div class="content">
+    <main>
+        <a class="skip" href="#main">Skip to Main</a>
+        <header id="main">
+            <img src = "images/logo.png" alt="logo" id="logo">
+                <nav class="nav-bar">
+                    <a href="index.html">Home</a>
+                    <a href="resume.html">Resume</a>
+                    <a href="about.html">About</a>
+                    <a href="more.html">More</a>
+                </nav>
+        </header>
+        <div class="welcome">
+            <span id="thin">Hey there!</span>
+        </div>
+        <div class="about">
+            <div class="content">
+                <p>
+                    I’m a Master's student at the University of Michigan School of Information specializing in Human Computer Interaction and UX Design. I graduated from the University of Washington, Seattle with a degree in Psychology and a minor in Informatics. <br><br><br>
+                    I aim to design engaging products that create emotional connections and leave a lasting  and positive impact. I love to design in dynamic environments that encourage me to not only practice design, but learn and adapt new design skills and principles. When I’m not designing digital products, you can find me reading cookbooks,  drinking coffee, or eating the free samples at Costco.
+                </p>
+            </div>
+            <div class="imagebox">
+                <img src="images/profile.jpg" alt="Girl standing in front of leaves">
+            </div>
+        </div>
+        <div class="contact">
+            <div class="heading">
+                <h2>Want to get in touch?</h2>
+                <p>Drop me a line!</p>
+            </div>
+            <div class="column">
+                <form action="https://formspree.io/ksam6484@yahoo.com" method = "POST">
+                <label for="name"> Name</label><br>
+                <input type="text" id="name" name="name" placeholder="Enter your name"><br>
+                <label for="email">Email Address</label><br>
+                <input type="text" id="email" name="email" placeholder="example@email.com"><br>
+                <label for="subject">Subject</label><br>
+                <textarea id="subject" name="subject" placeholder="Enter your message" style="height:170px"></textarea><br>
+                <input type="submit" value="Submit">
+                </form>
+            </div>
+        </div>
+        <div class="gallery">
+            <img src="images/image1.JPG" class="img1" alt="Two girls, one wearing a graduation robe."/>
+            <img src="images/image2.JPG" class="img2" alt="A girl on a tire swing"/>
+            <img src="images/image3.JPG" class="img3" alt="A dog, looking to the camera"/>
+            <img src="images/image4.JPG" class="img4" alt="Two women, one standing behind the other"/>
+            <img src="images/image5.JPG" class="img5" alt="Two women hugging for a photo"/>
+            <img src="images/image6.JPG" class="img6" alt="Four women at college graduation"/>
+            <img src="images/image7.JPG" class="img7" alt="Two women, one wearing a UMich hat"/>
+            <img src="images/image8.JPG" class="img8" alt="Two girls at a football game "/>
+            <img src="images/image9.JPG" class="img8" alt="Family of four photo with two parents, two daughters, and a dog"/>
+        </div>
+        <footer>
             <p>
-                I’m a Master's student at the University of Michigan School of Information specializing in Human Computer Interaction and UX Design. I graduated from the University of Washington, Seattle with a degree in Psychology and a minor in Informatics. <br><br><br>
-                I aim to design engaging products that create emotional connections and leave a lasting  and positive impact. I love to design in dynamic environments that encourage me to not only practice design, but learn and adapt new design skills and principles. When I’m not designing digital products, you can find me reading cookbooks,  drinking coffee, or eating the free samples at Costco.
+                Designed by Kaavya Samu <br/>
+                ksamu@umich.edu
             </p>
-        </div>
-        <div class="imagebox">
-            <img src="images/profile.jpg" alt="Girl standing in front of leaves">
-        </div>
-    </div>
-    <div class="contact">
-        <div class="heading">
-            <h2>Want to get in touch?</h2>
-            <p>Drop me a line!</p>
-        </div>
-        <div class="column">
-            <form action="https://formspree.io/ksam6484@yahoo.com" method = "POST">
-            <label for="name"> Name</label><br>
-            <input type="text" id="name" name="name" placeholder="Enter your name"><br>
-            <label for="email">Email Address</label><br>
-            <input type="text" id="email" name="email" placeholder="example@email.com"><br>
-            <label for="subject">Subject</label><br>
-            <textarea id="subject" name="subject" placeholder="Enter your message" style="height:170px"></textarea><br>
-            <input type="submit" value="Submit">
-            </form>
-        </div>
-    </div>
-    <div class="gallery">
-        <img src="images/image1.JPG" class="img1" alt="Two girls, one wearing a graduation robe."/>
-        <img src="images/image2.JPG" class="img2" alt="A girl on a tire swing"/>
-        <img src="images/image3.JPG" class="img3" alt="A dog, looking to the camera"/>
-        <img src="images/image4.JPG" class="img4" alt="Two women, one standing behind the other"/>
-        <img src="images/image5.JPG" class="img5" alt="Two women hugging for a photo"/>
-        <img src="images/image6.JPG" class="img6" alt="Four women at college graduation"/>
-        <img src="images/image7.JPG" class="img7" alt="Two women, one wearing a UMich hat"/>
-        <img src="images/image8.JPG" class="img8" alt="Two girls at a football game "/>
-        <img src="images/image9.JPG" class="img8" alt="Family of four photo with two parents, two daughters, and a dog"/>
-    </div>
-
+        </footer>
+    </main>
 </body>
-<footer>
-    <p>
-        Designed by Kaavya Samu <br/>
-        ksamu@umich.edu
-    </p>
-</footer>
+
 </html>

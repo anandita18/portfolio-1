@@ -6,7 +6,7 @@ body{
     font-family: 'Montserrat';
 }
 
-/* .skip a{
+.skip a{
     background: #FFFFFF;
     left: 0;
     padding: 6px;
@@ -16,7 +16,7 @@ body{
     position: absolute;
     top: -40px;
     overflow: hidden;
-} */
+}
   
 /* https://accessibility.psu.edu/skipnav/skiplinks/ */
   
