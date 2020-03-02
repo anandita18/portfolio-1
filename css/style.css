@@ -326,6 +326,8 @@ input[type=submit] {
 }
 
 footer {
+    display: flex;
+    flex-direction:row;
     position: absolute;
     margin-top: auto;
     left: 0;
@@ -335,6 +337,25 @@ footer {
     text-align: center;
 }
 
+footer p{
+    text-align: left;
+    padding-left: 50px;
+}
+
+footer p .hyperlink{
+    color: white;
+}
+footer .twitter, .instagram, .linkedin{
+    padding-right: 10px;
+    width: 30px;
+}
+
+footer .icons{
+    position: absolute;
+    padding-top: 20px;
+    padding-right: 50px;
+    right: 0;
+}
 @media screen and (min-width: 850px){
 
 }
