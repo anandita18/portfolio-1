@@ -74,15 +74,62 @@ header img{
     display:flex;
     flex-wrap: wrap;
     justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+
 }
 
-.gallery > img{
-    margin: 15px;
+.info1, .info2, .info3, .info4, .info5, .info6{
+    flex-direction: column;
+    width: 300px;
+    text-align: center;
+}
+
+.info1 > img{
     width: 300px;
     height: 300px;
-    justify-content: center;
-    align-items: center;
+    padding-bottom: 20px;
+
+}
+.info2 > img{
+    width: 300px;
+    height: 300px;
+    padding-bottom: 20px;
+
+}
+.info3 > img{
+    width: 300px;
+    height: 300px;
+    padding-bottom: 20px;
+
+}
+.info4 > img{
+    width: 300px;
+    height: 300px;
+    padding-bottom: 20px;
+}
+.info5 > img{
+    width: 300px;
+    height: 300px;
+    padding-bottom: 20px;
+
+}
+.info6 > img{
+    width: 300px;
+    height: 300px;
+    padding-bottom: 20px;
+
+}
+
+.info5{
+    margin-top: 40px;
+}
+
+.info6{
+    margin-top: -15px;
 }
 
 #page2 .heading{
