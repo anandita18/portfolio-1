@@ -80,12 +80,23 @@ header img{
     white-space: nowrap;
     margin: 0 auto;
     letter-spacing: .05em;
-    animation: typing 3.5s steps(40, end)
-    }
+    animation: typing 3.5s steps(40, end);
+    -webkit-animation: typing 3.5s steps(40, end);
+}
   
   @keyframes typing {
     from { width: 0 }
     to { width: 100% }
+  }
+
+  @-webkit-keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  @media screen and  (prefers-reduced-motion: reduce){
+    #h1{
+      animation: none;
+    }
   }
 
 /* https://www.w3schools.com/howto/howto_css_flip_card.asp */
@@ -98,13 +109,13 @@ header img{
     padding-left: 20px;
     padding-right: 60px;
     padding-bottom: 20px;
-    perspective: 2000px;
+    /* perspective: 2000px; */
 }
 
 .card{
     flex-direction: column;
     position: relative;
-    transition: transform .2s;
+    transition: transform .4s;
     transform-style: preserve-3d;
     width: 300px;
     text-align: center;
