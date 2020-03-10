@@ -93,11 +93,7 @@ header img{
     from { width: 0 }
     to { width: 100% }
   }
-  @media screen and  (prefers-reduced-motion: reduce){
-    #h1{
-      animation: none;
-    }
-  }
+
 
 /* https://www.w3schools.com/howto/howto_css_flip_card.asp */
 #page1 .gallery{
@@ -386,3 +382,9 @@ footer .icons{
     }
 
 }
+
+@media screen and  (prefers-reduced-motion: reduce){
+    #h1{
+      animation: none;
+    }
+  }
