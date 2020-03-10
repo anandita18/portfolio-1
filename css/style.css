@@ -98,13 +98,13 @@ header img{
     padding-left: 20px;
     padding-right: 60px;
     padding-bottom: 20px;
-    perspective: 600;
+    perspective: 2000px;
 }
 
 .info1, .info2, .info3, .info4, .info5, .info6{
     flex-direction: column;
     position: relative;
-    transition: all 0.8s ease-in-out;
+    transition: transform;
     transform-style: preserve-3d;
     width: 300px;
     text-align: center;
@@ -115,17 +115,23 @@ header img{
 }
 
 .info1 .one, .info2 .two, .info3 .three, .info4 .four, .info5 .five, .info6 .six{
+    position: absolute;
     backface-visibility: hidden;
+    -webkit-backface-visibility: hidden; /* Safari */
     position: absolute;
 }
 
 .info1 .one-back, .info2 .two-back, .info3 .three-back, .info4 .four-back, .info5 .five-back, .info6 .six-back{
     transform: rotateY(180deg);
     background-color: #dddddd;
-    height: 300px;
+    height: 250px;
+    padding-top: 50px;
+    padding-left: 4px;
+    padding-right: 4px;
 
-
+    
 }
+
 .one > img{
     width: 300px;
     height: 300px;
