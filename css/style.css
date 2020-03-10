@@ -54,12 +54,8 @@ header img{
     color: #000000;
 }
 
-.nav-bar a:hover, a:focus{
+.nav-bar .current{
     color: #24847B;
-    text-transform: uppercase;
-}
-
-.nav-bar a:active{
     text-transform: uppercase;
 }
 
@@ -69,6 +65,7 @@ header img{
     font-size: 20px;
     color: #24847B;
 }
+
 #page1 .h2{
     font-size: 13px;
     text-align: center;
@@ -77,6 +74,20 @@ header img{
     color: #000000;
     font-weight: lighter;
 }
+
+.intro h1{
+    overflow: hidden;
+    white-space: nowrap;
+    margin: 0 auto;
+    letter-spacing: .05em;
+    animation: typing 3.5s steps(40, end)
+    }
+  
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+
 /* https://www.w3schools.com/howto/howto_css_flip_card.asp */
 #page1 .gallery{
     display:flex;
@@ -111,7 +122,8 @@ header img{
 .info1 .one-back, .info2 .two-back, .info3 .three-back, .info4 .four-back, .info5 .five-back, .info6 .six-back{
     transform: rotateY(180deg);
     background-color: #dddddd;
-    height: 100%;
+    height: 300px;
+
 
 }
 .one > img{
