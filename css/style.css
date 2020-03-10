@@ -104,7 +104,7 @@ header img{
 .card{
     flex-direction: column;
     position: relative;
-    transition: transform;
+    transition: transform .2s;
     transform-style: preserve-3d;
     width: 300px;
     text-align: center;
