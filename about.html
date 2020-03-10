@@ -1,6 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-160192862-1"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-160192862-1');
+</script>
     <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="style">
@@ -9,14 +18,14 @@
 </head>    
 <body id="page3">
     <main>
-        <a class="skip" href="#main">Skip to Main</a>
+        <div class="skip"><a href="#main">Skip to Main</a></div>
         <header id="main">
             <img src = "images/logo.png" alt="logo" id="logo">
                 <nav class="nav-bar">
-                    <a href="index.html">Home</a>
-                    <a href="resume.html">Resume</a>
-                    <a href="about.html">About</a>
-                    <a href="more.html">More</a>
+                    <li class="title"><a href="index.html">Home</a></ul>
+                    <li class="title"><a href="resume.html">Resume</a></li>
+                    <li class="title"><a href="about.html">About</a></li>
+                    <li class="title"><a href="more.html">More</a></li>
                 </nav>
         </header>
         <div class="welcome">

@@ -6,7 +6,7 @@ body{
     font-family: 'Montserrat';
 }
 
-/* .skip a{
+.skip a{
     background: #FFFFFF;
     left: 0;
     -webkit-transition: top 1s ease-out;
@@ -15,21 +15,24 @@ body{
     position: absolute;
     top: -100px;
     overflow: hidden;
-} */
+    color: #000000;
+}
   
 /* https://accessibility.psu.edu/skipnav/skiplinks/ */
   
-/* .skip a:focus, .skip a:active{
+.skip a:focus, .skip a:active{
     position: relative;
     overflow: visible;
     top:0;
     left:0;
     border: 2px solid #000000;
-}  */
+    color: #000000;
+
+} 
 
 header{
     padding-right: 15px;
-    background: #fff;
+    background: #ffffff;
 }
 
 header img{
@@ -39,10 +42,11 @@ header img{
 }
 
 .nav-bar{
-    text-align: right;
-    word-spacing: 15px;
-    padding-top: 35px;
-    padding-right: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style: none;
+
 }
 
 .nav-bar a{
@@ -52,7 +56,11 @@ header img{
 
 .nav-bar a:hover, a:focus{
     color: #24847B;
-    text-decoration: underline;
+    text-transform: uppercase;
+}
+
+.nav-bar a:active{
+    text-transform: uppercase;
 }
 
 #page1 .intro{
@@ -81,51 +89,47 @@ header img{
     padding-bottom: 20px;
 }
 
-/* .gallery > img{
-    width: 300px;
-    height: 300px;
-} */
-
 .info1, .info2, .info3, .info4, .info5, .info6{
     flex-direction: column;
+    position: relative;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
     width: 300px;
     text-align: center;
 }
 
-.info1 > img{
+.one > img{
+    width: 300px;
+    height: 300px;
+    padding-bottom: 20px;
+}
+.two > img{
     width: 300px;
     height: 300px;
     padding-bottom: 20px;
 
 }
-.info2 > img{
+.three > img{
     width: 300px;
     height: 300px;
     padding-bottom: 20px;
 
 }
-.info3 > img{
+.four > img{
+    width: 300px;
+    height: 300px;
+    padding-bottom: 20px;
+}
+.five > img{
     width: 300px;
     height: 300px;
     padding-bottom: 20px;
 
 }
-.info4 > img{
+.six > img{
     width: 300px;
     height: 300px;
     padding-bottom: 20px;
-}
-.info5 > img{
-    width: 300px;
-    height: 300px;
-    padding-bottom: 20px;
-
-}
-.info6 > img{
-    width: 300px;
-    height: 300px;
-    padding-bottom: 20px;
-
 }
 
 .info5{
@@ -135,6 +139,7 @@ header img{
 .info6{
     margin-top: -15px;
 }
+
 
 #page2 .heading{
     margin-left: 20px;
@@ -324,7 +329,6 @@ input[type=submit] {
     top: 20%;
     left: -38px;
 }
-
 footer {
     display: flex;
     flex-direction:row;
@@ -336,12 +340,10 @@ footer {
     color: white;
     text-align: center;
 }
-
 footer p{
     text-align: left;
     padding-left: 50px;
 }
-
 footer p .hyperlink{
     color: white;
 }
@@ -357,5 +359,23 @@ footer .icons{
     right: 0;
 }
 @media screen and (min-width: 850px){
+    .nav-bar{
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .nav-bar .title{
+        padding-right: 25px;
+        padding-top: 20px;
+    }
+
+    
+}
+
+@media screen and (min-width: 1024px){
+    .nav-bar{
+        flex-direction: row;
+        justify-content: flex-end;
+    }
 
 }
