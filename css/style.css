@@ -101,79 +101,41 @@ header img{
     perspective: 2000px;
 }
 
-.info1, .info2, .info3, .info4, .info5, .info6{
+.card{
     flex-direction: column;
     position: relative;
     transition: transform;
     transform-style: preserve-3d;
     width: 300px;
     text-align: center;
+    padding-bottom: 15px;
 }
 
-.info1:hover, .info2:hover, .info3:hover, .info4:hover, .info5:hover, .info6:hover{
+.card:hover{
     transform: rotateY(180deg);
 }
 
-.info1 .one, .info2 .two, .info3 .three, .info4 .four, .info5 .five, .info6 .six{
+.card .front{
     position: absolute;
     backface-visibility: hidden;
-    -webkit-backface-visibility: hidden; /* Safari */
+    -webkit-backface-visibility: hidden;
     position: absolute;
 }
 
-.info1 .one-back, .info2 .two-back, .info3 .three-back, .info4 .four-back, .info5 .five-back, .info6 .six-back{
+.card .back{
     transform: rotateY(180deg);
     background-color: #dddddd;
     height: 250px;
     padding-top: 50px;
     padding-left: 4px;
-    padding-right: 4px;
-
-    
+    padding-right: 4px;  
 }
 
-.one > img{
+.front > img{
     width: 300px;
     height: 300px;
     padding-bottom: 20px;
 }
-.two > img{
-    width: 300px;
-    height: 300px;
-    padding-bottom: 20px;
-
-}
-.three > img{
-    width: 300px;
-    height: 300px;
-    padding-bottom: 20px;
-
-}
-.four > img{
-    width: 300px;
-    height: 300px;
-    padding-bottom: 20px;
-}
-.five > img{
-    width: 300px;
-    height: 300px;
-    padding-bottom: 20px;
-
-}
-.six > img{
-    width: 300px;
-    height: 300px;
-    padding-bottom: 20px;
-}
-
-.info5{
-    margin-top: 40px;
-}
-
-.info6{
-    margin-top: -15px;
-}
-
 
 #page2 .heading{
     margin-left: 20px;
