@@ -21,14 +21,12 @@ body{
 /* https://accessibility.psu.edu/skipnav/skiplinks/ */
   
 .skip a:focus, .skip a:active{
-    position: relative;
-    overflow: visible;
-    top:0;
-    left:0;
+    position: relative; 
+    /* overflow: visible; */ 
+    top: 0; 
+    text-align: center;
     border: 2px solid #000000;
-    color: #000000;
-
-} 
+}
 
 header{
     padding-right: 15px;
@@ -97,7 +95,7 @@ header img{
 
 /* https://www.w3schools.com/howto/howto_css_flip_card.asp */
 #page1 .gallery{
-    display:flex;
+    display: flex;
     flex-wrap: wrap;
     justify-content: center;
     justify-content: space-evenly;
@@ -109,33 +107,42 @@ header img{
 }
 
 .card{
-    flex-direction: column;
     position: relative;
-    transition: transform .2s;
-    transform-style: preserve-3d;
     width: 300px;
-    text-align: center;
-    padding-bottom: 15px;
+    height: 300px;
+    transform-style: preserve-3d;
+    transition: transform 1s;
+    padding-top: 50px;
+
 }
 
 .card:hover{
     transform: rotateY(180deg);
+    transition: transform 1s;
 }
 
-.card .front{
+.front{
+    z-index: 100;
     position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
     backface-visibility: hidden;
-    -webkit-backface-visibility: hidden;
-    position: absolute;
 }
 
-.card .back{
-    transform: rotateY(180deg);
-    background-color: #dddddd;
+.back{
+    padding-top: 40px;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: center;
+    position: absolute;
+    top: 0;
+    left: 0;
     height: 250px;
-    padding-top: 50px;
-    padding-left: 4px;
-    padding-right: 4px;  
+    transform: rotateY(180deg);
+    background: #dddddd;
+    backface-visibility: hidden;
 }
 
 .front > img{
