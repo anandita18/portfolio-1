@@ -13,7 +13,7 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="style">
-    <link rel="icon" type="image/png" href="images/logo.png"/>
+    <link rel="icon" type="image/png" href="images/logo.png" alt="logo for Kaavya's portfolio"/>
     <title>Kaavya's Portfolio</title>
 </head>    
 <body id="page3">
@@ -44,21 +44,24 @@
                  </div>
               </div>
         </div>
-        <div class="contact">
+
+        <div id="contact">
             <div class="heading">
                 <h2>Want to get in touch?</h2>
-                <p>Drop me a line!</p>
+            <p>Drop me a line!</p>
             </div>
-            <div class="column">
+            <div class ="form">
                 <form action="https://formspree.io/ksam6484@yahoo.com" method = "POST">
-                <label for="name"> Name</label><br>
-                <input type="text" id="name" name="name" placeholder="Enter your name"><br>
-                <label for="email">Email Address</label><br>
-                <input type="text" id="email" name="email" placeholder="example@email.com"><br>
-                <label for="subject">Subject</label><br>
-                <textarea id="subject" name="subject" placeholder="Enter your message" style="height:170px"></textarea><br>
-                <input type="submit" value="Submit">
-                <input type="hidden" name="_next" value="https://mysite.com/thanks.html"/>
+                    <label for ="first">First Name</label><br>
+                    <input type="text" id ="first" name="fname" placeholder="First name"/> <br>
+                    <label for ="last">Last Name</label><br>
+                    <input type="text" id ="last" name="lname" placeholder="Last name"/> <br>
+                    <label for ="email">Email Address</label><br>
+                    <input type="text" id="email" name ="email" placeholder="Email address"/> <br>
+                    <label for="message"> Message</label>
+                    <textarea id="message" name="message" placeholder="Type your message here" style='height:170px'></textarea><br>
+                    <input type = "submit" value="Submit">
+                    <input type="hidden" name="_next" value="https://mysite.com/thanks.html"/>
                 </form>
             </div>
         </div>
