@@ -19,10 +19,13 @@ body{
 }
   
 /* https://accessibility.psu.edu/skipnav/skiplinks/ */
-.skip a:focus, .skip a:active{
+.skip a:focus, .skip a:active, .skip a:hover{
     position: relative; 
-    /* overflow: visible; */ 
+    overflow: visible; 
     top: 0; 
+    left:0;
+    width:auto;
+    height: auto;
     text-align: center;
     border: 2px solid #000000;
 }
@@ -440,8 +443,12 @@ footer .icons{
         scroll-behavior: auto;
     }
 
-    #page1 .card:hover{
+    /* #page1 .card:hover{
         transform: none !important;
+        transition: none !important;
+    } */
+
+    #page1 .card{
         transition: none !important;
     }
     
