@@ -29,7 +29,7 @@ body{
     text-align: center;
     border: 2px solid #24847B;
     padding-left: 1px;
-    padding-right: 1px;
+    padding-right: ;
     /* background-color: #24847B; */
 }
 
@@ -409,6 +409,8 @@ footer .icons{
         width: 100%;
         height: 100%;
         backface-visibility: hidden;
+        -webkit-backface-visibility: hidden;
+
     }
     
     .back{
@@ -423,6 +425,8 @@ footer .icons{
         transform: rotateY(180deg);
         background: #dddddd;
         backface-visibility: hidden;
+        -webkit-backface-visibility: hidden;
+        width: 100%;
     }
 
     #page3 .gallery{
