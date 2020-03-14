@@ -6,7 +6,7 @@ body{
     font-family: 'Muli', sans-serif;
 }
 /* Skip to Main */
-.skip a{
+a.skip {
     background: #FFFFFF;
     left: 0;
     -webkit-transition: top 1s ease-out;
@@ -19,7 +19,7 @@ body{
 }
   
 /* https://accessibility.psu.edu/skipnav/skiplinks/ */
-.skip a:focus, .skip a:active, .skip a:hover{
+a.skip:focus, a.skip:active{
     position: relative; 
     overflow: visible; 
     top: 0; 
@@ -29,14 +29,9 @@ body{
     text-align: center;
     border: 2px solid #24847B;
     padding-left: 1px;
-    padding-right: ;
-    /* background-color: #24847B; */
+    padding-right: 1px;
 }
 
-header{
-    padding-right: 15px;
-    background: #ffffff;
-}
 /* Logo */
 header img{
     padding-left: 20px;

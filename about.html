@@ -17,8 +17,8 @@
     <title>Kaavya's Portfolio</title>
 </head>    
 <body id="page3">
-    <div class="skip"><a href="#content">Skip to Main Content</a></div>
-        <header>
+    <a class = "skip" href="#content">Skip to Main Content</a>
+    <header>
             <img src = "images/logo.png" alt="logo" id="logo">
             <nav>
                 <ul class="nav-bar">
@@ -29,8 +29,8 @@
                 </ul>
             </nav>
         </header>
-    <main id="content">        
-        <div class="main-container">
+        <main id="content" tabindex=-1>
+            <div class="main-container">
             <div class="parallax-container">
                 <h1>
                     ABOUT ME.
@@ -80,14 +80,19 @@
     </main>
     <footer>
         <p>
-            Kaavya Samu <br/>
-            <a href="mailto:ksamu@umich.edu" class="hyperlink">ksamu@umich.edu
-        </p>
-        <div class="icons">
-            <a href="https://www.twitter.com/kaavyuhs"><img src="images/twitter.png" alt="Twitter" class="twitter"></a>
-            <a href="https://www.instagram.com/kaavsamu"><img src="images/instagram.png" alt="Instagram" class="instagram"></a>
-            <a href="https://www.linkedin.com/in/kaavya=samu"><img src="images/linkedin.png" alt="LinkedIn" class="linkedin"></a>
-        </div>
+            Kaavya Samu &copy;
+            <script>
+                var date = new Date();
+                var n = date.getFullYear();
+                document.write(n)
+            </script><br/>
+            <a href="mailto:ksamu@umich.edu" class="hyperlink" aria-label="first link">ksamu@umich.edu
+            </p>
+            <div class="icons">
+                <a href="https://www.twitter.com/kaavyuhs"><img src="images/twitter.png" alt="Twitter" class="twitter" aria-hidden="true"></a>
+                <a href="https://www.instagram.com/kaavsamu"><img src="images/instagram.png" alt="Instagram" class="instagram" aria-hidden="true"></a>
+                <a href="https://www.linkedin.com/in/kaavya=samu"><img src="images/linkedin.png" alt="LinkedIn" class="linkedin" aria-hidden="true"></a>
+            </div>
         </footer>
 </body>
 
