@@ -24,7 +24,7 @@ a.skip:focus, a.skip:active{
     top: 0; 
     left:0;
     text-align: center;
-    background-color: solid #24847B;
+    border: 2px solid #24847B;
     padding-left: 1px;
     padding-right: 1px;
 }
