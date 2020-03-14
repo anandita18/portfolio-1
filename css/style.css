@@ -17,17 +17,14 @@ a.skip {
     overflow: hidden;
     color: #000000;
 }
-  
+
 /* https://accessibility.psu.edu/skipnav/skiplinks/ */
 a.skip:focus, a.skip:active{
-    position: relative; 
     overflow: visible; 
     top: 0; 
     left:0;
-    width:auto;
-    height: auto;
     text-align: center;
-    border: 2px solid #24847B;
+    background-color: solid #24847B;
     padding-left: 1px;
     padding-right: 1px;
 }
@@ -118,12 +115,14 @@ header img{
     padding-bottom: 20px;
 } 
 
+
+/* About Page */
 .form {
     border-radius: 5px;
     background-color: #c9dddc;
     padding: 20px;
 }
-/* About Page */
+
 .parallax-container > h1{
     color:#1F6F6A;
     font-size:30px;
