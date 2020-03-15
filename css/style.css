@@ -81,15 +81,15 @@ header img{
     -webkit-animation: typing 3.5s steps(40, end);
 }
   
-  @keyframes typing {
+@keyframes typing {
     from { width: 0 }
     to { width: 100% }
-  }
+}
 
-  @-webkit-keyframes typing {
+@-webkit-keyframes typing {
     from { width: 0 }
     to { width: 100% }
-  }
+}
 
 
 /* https://www.w3schools.com/howto/howto_css_flip_card.asp */
