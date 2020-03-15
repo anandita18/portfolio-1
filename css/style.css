@@ -62,16 +62,16 @@ header img{
     color: #24847B;
 }
 
-#page1 .h2{
+#page1 .h{
     font-size: 13px;
     text-align: center;
 }
-#page1 #text-thin{
+#page1 #text-thin, #thin-text, #text-thinner2{
     color: #000000;
     font-weight: lighter;
 }
 
-.intro h1{
+.intro .heading{
     overflow: hidden;
     white-space: nowrap;
     margin: 0 auto;
