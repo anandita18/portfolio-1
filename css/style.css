@@ -39,11 +39,10 @@ header img{
 .nav-bar{
     display: flex;
     flex-direction: column;
+    justify-items: center;
     align-items: center;
     list-style: none;
-
 }
-
 .nav-bar a{
     text-decoration: none;
     color: #000000;
@@ -66,7 +65,7 @@ header img{
     font-size: 13px;
     text-align: center;
 }
-#page1 #thin-text, #text-thin{
+#page1 #thin-text, #text-thin, #text-thinner2{
     color: #000000;
     font-weight: lighter;
 }
