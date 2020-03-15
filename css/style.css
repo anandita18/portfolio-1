@@ -71,16 +71,14 @@ header img{
     font-weight: lighter;
 }
 
+/* https://css-tricks.com/snippets/css/typewriter-effect/ */
 .intro .heading{
     overflow: hidden;
     white-space: nowrap;
     margin: 0 auto;
     letter-spacing: .05em;
-    /* animation: typing 3.5s steps(40, end);
-    -webkit-animation: typing 3.5s steps(40, end); */
-    animation: type 4s steps(60, end); 
-    -webkit-animation: type 4s steps(60, end);
-
+    animation: typing 3.5s steps(40, end);
+    -webkit-animation: typing 3.5s steps(40, end);
 }
   
   @keyframes typing {
