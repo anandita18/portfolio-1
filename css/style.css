@@ -78,6 +78,13 @@ header img{
     animation: typing 3.5s steps(40, end);
     -webkit-animation: typing 3.5s steps(40, end);
 }
+
+#page1 .heading1{
+    overflow: hidden;
+    white-space: nowrap;
+    margin: 0 auto;
+    text-align: center;
+}
   
   @keyframes typing {
     from { width: 0 }
@@ -407,7 +414,7 @@ footer .icons{
         padding-top: 50px;
     }
     
-    .card:hover{
+    .card:hover, .card:focus{
         transform: rotateY(180deg);
         transition: transform 1s;
     }
@@ -432,7 +439,7 @@ footer .icons{
         position: absolute;
         top: 0;
         left: 0;
-        height: 250px;
+        height: 300px;
         transform: rotateY(180deg);
         background: #dddddd;
         backface-visibility: hidden;
