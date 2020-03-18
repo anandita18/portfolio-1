@@ -439,7 +439,7 @@ footer .icons{
         position: absolute;
         top: 0;
         left: 0;
-        height: 300px;
+        height: 250px;
         transform: rotateY(180deg);
         background: #dddddd;
         backface-visibility: hidden;
